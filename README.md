@@ -79,7 +79,7 @@ Aplicación desarrollada en **React + Vite** que permite buscar personajes de la
 
 ## Despliegue
 
-La aplicación está desplegada en: [Enlace a Netlify/Vercel](<url-del-despliegue>)
+La aplicación está desplegada en: [https://seachcharacters.netlify.app/]
 
 ---
 
