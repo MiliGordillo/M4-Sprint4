@@ -1,10 +1,10 @@
-# 📌 Buscador de Personajes de Series
+# Buscador de Personajes de Series
 
 Aplicación desarrollada en **React + Vite** que permite buscar personajes de la serie "Rick and Morty" consumiendo una API externa, visualizar resultados, gestionar favoritos y realizar acciones mediante formularios.
 
 ---
 
-## 🎯 Objetivo
+## Objetivo
 
 - Buscar personajes por nombre usando una API pública.
 - Visualizar resultados en tarjetas con información relevante (edad, especie, locación, etc.).
@@ -15,13 +15,13 @@ Aplicación desarrollada en **React + Vite** que permite buscar personajes de la
 
 ---
 
-## 🌐 API Utilizada
+## API Utilizada
 
 - [Rick and Morty API](https://rickandmortyapi.com/api/character/)
 
 ---
 
-## 🛠️ Tecnologías y Librerías
+## Tecnologías y Librerías
 
 - React + Vite
 - TailwindCSS
@@ -31,7 +31,7 @@ Aplicación desarrollada en **React + Vite** que permite buscar personajes de la
 
 ---
 
-## 📋 Estructura del Proyecto
+## Estructura del Proyecto
 
 - `src/components/`: Componentes reutilizables (Header, CharacterCard, Favorites, Loader, ThemeToggle).
 - `src/context/`: Contextos de React para manejar el tema y los favoritos.
@@ -42,7 +42,7 @@ Aplicación desarrollada en **React + Vite** que permite buscar personajes de la
 
 ---
 
-## ⚙️ Decisiones Técnicas
+## Decisiones Técnicas
 
 ### Manejo de Estado y Efectos
 
@@ -68,7 +68,7 @@ Aplicación desarrollada en **React + Vite** que permite buscar personajes de la
 
 ---
 
-## 📝 Uso de la Aplicación
+## Uso de la Aplicación
 
 1. Ingresa el nombre del personaje y la cantidad de resultados a buscar.
 2. Visualiza los personajes en tarjetas con su información.
@@ -77,7 +77,7 @@ Aplicación desarrollada en **React + Vite** que permite buscar personajes de la
 
 ---
 
-## 🌍 Despliegue
+## Despliegue
 
 La aplicación está desplegada en: [Enlace a Netlify/Vercel](<url-del-despliegue>)
 
