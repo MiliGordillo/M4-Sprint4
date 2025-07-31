@@ -25,7 +25,7 @@ const Header = ({ onOpenFavorites }) => {
         style={{ height: "56px" }}
       >
         <motion.img
-          src="/public/logo.png"
+          src="/logo.png"
           alt="Logo"
           className="h-20 w-auto max-h-full"
           animate={{ opacity: [1, 0, 1] }}
