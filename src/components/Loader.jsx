@@ -8,7 +8,7 @@ function Loader({ darkMode, message = "Cargando..." }) {
       aria-live="polite"
     >
       <img
-        src="/public/icono.gif"
+        src="/icono.gif"
         alt="Cargando"
         className="w-24 h-24 mb-4"
       />

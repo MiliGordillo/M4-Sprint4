@@ -71,7 +71,7 @@ function Favorites({ isOpen, onClose }) {
                       toast.error(
                         <div className="flex items-center gap-3">
                           <img
-                            src="/public/morty.gif"
+                            src="/morty.gif"
                             alt="eliminados"
                             className="w-20 h-20 rounded-full"
                           />
@@ -131,7 +131,7 @@ function Favorites({ isOpen, onClose }) {
                           toast.info(
                             <div className="flex items-center gap-3">
                               <img
-                                src="/public/morty.gif"
+                                src="/morty.gif"
                                 alt="eliminado"
                                 className="w-20 h-20 rounded-full"
                               />
