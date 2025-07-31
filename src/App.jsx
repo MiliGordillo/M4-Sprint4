@@ -1,12 +1,14 @@
-import React, { useContext } from "react";
+import React, { useContext, useState } from "react";
 import { ThemeContext } from "./context/ThemeContext";
 import Header from "./components/Header";
 import Home from "./pages/Home";
+import Favorites from "./components/Favorites";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
 const App = () => {
   const { darkMode } = useContext(ThemeContext);
+  const [showFavorites, setShowFavorites] = useState(false);
 
   return (
     <div
@@ -15,7 +17,6 @@ const App = () => {
         (darkMode ? "text-white" : "text-black")
       }
     >
-      {/* Video de fondo */}
       <video
         autoPlay
         loop
@@ -26,12 +27,13 @@ const App = () => {
         <source src="/rick-sanchez-in-the-field-rick-and-morty-moewalls-com.mp4" type="video/mp4" />
         Tu navegador no soporta el video de fondo.
       </video>
-      <Header />
+      <Header onOpenFavorites={() => setShowFavorites(true)} />
       <main className="flex-1">
         <Home />
       </main>
+      <Favorites isOpen={showFavorites} onClose={() => setShowFavorites(false)} />
       <ToastContainer
-        position="bottom-right" // Cambiado a parte inferior derecha
+        position="bottom-right"
         autoClose={3000}
         hideProgressBar={false}
         newestOnTop={false}

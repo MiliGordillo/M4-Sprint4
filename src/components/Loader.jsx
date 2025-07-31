@@ -1,17 +1,29 @@
 import React from "react";
 
-function Loader({ darkMode }) {
+function Loader({ darkMode, message = "Cargando..." }) {
   return (
     <div
-      className={
-        "text-center font-bold text-xl animate-pulse " +
-        (darkMode ? "text-[#A8DADC]" : "text-[#B39CD0]")
-      }
+      className="flex flex-col items-center justify-center py-8"
+      role="status"
+      aria-live="polite"
     >
-      Cargando...
+      <img
+        src="/public/icono.gif"
+        alt="Cargando"
+        className="w-24 h-24 mb-4"
+      />
+      <span
+        className={
+          "font-bold text-xl animate-pulse " +
+          (darkMode ? "text-[#457b9d]" : "text-[#6d28d9]")
+        }
+      >
+        {message}
+      </span>
     </div>
   );
 }
 
 export default Loader;
+
 

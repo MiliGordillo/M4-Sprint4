@@ -1,8 +1,27 @@
 import React, { useContext } from "react";
 import { FavoritesContext } from "../context/FavoritesContext";
+import { toast } from "react-toastify";
 
 function CharacterCard({ character, isFavorite, darkMode }) {
   const { addFavorite } = useContext(FavoritesContext);
+
+  const handleAddToFavorites = () => {
+    addFavorite(character);
+
+    toast.success(
+      <div className="flex items-center gap-3">
+        <img
+          src="/public/morty.gif"
+          alt="agregado"
+          className="w-18 h-18 rounded-full"
+        />
+        <span>¡{character.name} fue agregado a favoritos!</span>
+      </div>,
+      {
+        icon: false,
+      }
+    );
+  };
 
   return (
     <div
@@ -29,7 +48,7 @@ function CharacterCard({ character, isFavorite, darkMode }) {
 
       {!isFavorite && (
         <button
-          onClick={() => addFavorite(character)}
+          onClick={handleAddToFavorites}
           className={
             "mt-2 px-4 py-1 rounded transition " +
             (darkMode
@@ -45,5 +64,6 @@ function CharacterCard({ character, isFavorite, darkMode }) {
 }
 
 export default CharacterCard;
+
 
 
