@@ -11,7 +11,7 @@ function CharacterCard({ character, isFavorite, darkMode }) {
     toast.success(
       <div className="flex items-center gap-3">
         <img
-          src="/public/morty.gif"
+          src="morty.gif"
           alt="agregado"
           className="w-18 h-18 rounded-full"
         />
